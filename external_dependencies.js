@@ -1,3 +1,4 @@
+"use strict";
 const CONFIGURATION = require('./configuration.js');
 const exec = require('child_process').exec;
 

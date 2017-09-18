@@ -1,3 +1,4 @@
+"use strict";
 var CONFIGURATION = (function(){
 	return {
 		SSH_USERNSME: 'SSH_USERNSME',
