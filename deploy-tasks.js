@@ -86,7 +86,7 @@ async.series(
 			});
 		},
 		function(callback) {
-			const RUN_COMMAND = `kill $(sudo lsof -t -i:4200); cd ${project_path}/${CONFIGURATION.APP_TO_DEPLOY_PATH}; ng serve -o`;
+			const RUN_COMMAND = `cd ${project_path}/${CONFIGURATION.APP_TO_DEPLOY_PATH}; ng serve -o`;
 			console.log(`6. RUNNING PROJECT`);
 			execute(RUN_COMMAND, function(err) {
 				if(err) callback(err);
